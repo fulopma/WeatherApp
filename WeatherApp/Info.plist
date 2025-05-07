@@ -11,6 +11,11 @@
 			<key>UIWindowSceneSessionRoleApplication</key>
 			<array>
 				<dict>
+					<key>App Transport Security Settings</key>
+					<dict>
+						<key>Allow Arbitary Loads</key>
+						<true/>
+					</dict>
 					<key>UISceneConfigurationName</key>
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
