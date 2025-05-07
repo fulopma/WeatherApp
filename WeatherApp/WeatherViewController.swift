@@ -35,7 +35,7 @@ class WeatherViewController: UIViewController {
                     abort()
                 }
                 for city in self.cities[0..<5] {
-                    let cityName = city.localizedName
+                    let cityName = city.englishName
                     let cityKey = city.key
                     self.networkLayer.execute(
                         request: WeatherRequest.createRequest(cityKey: cityKey),
