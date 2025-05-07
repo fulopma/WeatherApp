@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WeatherViewController: UIViewController {
 
     @IBOutlet weak var weatherTableView: UITableView!
     let networkLayer = NetworkLayer()
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDataSource {
+extension WeatherViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)
         -> Int
     {
@@ -101,7 +101,7 @@ extension ViewController: UITableViewDataSource {
 
 }
 
-extension ViewController: UITableViewDelegate {
+extension WeatherViewController: UITableViewDelegate {
     func tableView(
         _ tableView: UITableView,
         viewForHeaderInSection section: Int
